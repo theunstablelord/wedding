@@ -1149,7 +1149,7 @@ input[name=fio].error {
 
 .sm-wrapper_block#additional .sm-wrapper_block-additional_title {
   line-height: 52px;
-  margin-bottom: 62px
+  margin-bottom: 82px;
 }
 
 .sm-wrapper_block#additional .sm-bg_additional,.sm-wrapper_block#invitation .sm-bg_additional {
@@ -1254,7 +1254,7 @@ input[name=fio].error {
 
 .sm-wrapper_block-date_text {
   margin-bottom: 40px;
-  margin-top: 30px
+  margin-top: 65px;
 }
 
 #dresscode .sm-wrapper_block-container_column {
@@ -1672,7 +1672,8 @@ body.sm-color4 .sm-wrapper_block#couple {
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      width: 100%
+      width: 100%;
+      padding: 50px;
   }
 
   .sm-wrapper_block#invitation .sm-bg_additional svg {
@@ -1812,7 +1813,8 @@ body.sm-color4 .sm-wrapper_block#couple {
 
   .sm-wrapper_block-date.calendar div {
       width: calc(45px*7 + 24px);
-      padding: 20px 12px
+      padding: 20px 12px;
+      transform: scale(0.8);
   }
 
   .sm-wrapper_block-date.calendar div li {
@@ -1861,16 +1863,15 @@ body.sm-color4 .sm-wrapper_block#couple {
   }
 
   #invitation .sm-wrapper_block-welcome {
-      line-height: 100%
+      line-height: 100%;
+      margin-bottom: 35px;
   }
 
   .sm-wrapper_block-lstitle {
       margin: 24px auto
   }
 
-  .calendar {
-      margin-left: -10px
-  }
+  
 
   #maindate .sm-wrapper_block-container {
       padding-bottom: 100px!important
@@ -2179,7 +2180,7 @@ body.sm-color4 .sm-wrapper_block#couple {
 
 .sm-wrapper_block-container {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   width: 100%;
 }
 
@@ -2189,3 +2190,18 @@ body.sm-color4 .sm-wrapper_block#couple {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 432px) {
+  .sm-wrapper_block-date.calendar div {
+    padding: 20px 12px;
+    transform: scale(.85);
+    width: 339px;
+}
+}
+
+@media (max-width: 400px) {
+  .calendar {
+    margin: -50px;
+  }
+}
+
